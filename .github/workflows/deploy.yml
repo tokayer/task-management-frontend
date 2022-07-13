@@ -11,6 +11,11 @@ jobs:
 
       - name: Yarn Cache
         uses: c-hive/gha-yarn-cache@v1
+        
+      - name: Setup node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 11.9.0
 
       - name: Install dependencies
         run: yarn
